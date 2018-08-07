@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		568D5F5748F9B555222FB5C1 /* libPods-MicrophoneAnalysis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 722800750155E488E89F2DBF /* libPods-MicrophoneAnalysis.a */; };
 		C293BCE1211957A600C31D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293BCE0211957A600C31D94 /* AppDelegate.swift */; };
 		C293BCE3211957A700C31D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293BCE2211957A700C31D94 /* ViewController.swift */; };
 		C293BCE6211957A700C31D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C293BCE4211957A700C31D94 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		611B71076FE1BAFBDB4FECB0 /* Pods-MicrophoneAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrophoneAnalysis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicrophoneAnalysis/Pods-MicrophoneAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
+		722800750155E488E89F2DBF /* libPods-MicrophoneAnalysis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MicrophoneAnalysis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C293BCDD211957A600C31D94 /* MicrophoneAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicrophoneAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C293BCE0211957A600C31D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C293BCE2211957A700C31D94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C293BCE7211957A700C31D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C293BCEA211957A700C31D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C293BCEC211957A700C31D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED37DF161C6C51A88FA47C4A /* Pods-MicrophoneAnalysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrophoneAnalysis.release.xcconfig"; path = "Pods/Target Support Files/Pods-MicrophoneAnalysis/Pods-MicrophoneAnalysis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568D5F5748F9B555222FB5C1 /* libPods-MicrophoneAnalysis.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C6FFC4CF1A4F281D5F16CD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				722800750155E488E89F2DBF /* libPods-MicrophoneAnalysis.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C293BCD4211957A600C31D94 = {
 			isa = PBXGroup;
 			children = (
 				C293BCDF211957A600C31D94 /* MicrophoneAnalysis */,
 				C293BCDE211957A600C31D94 /* Products */,
+				D6C74CD8A44EC8B0E88FF0BD /* Pods */,
+				8C6FFC4CF1A4F281D5F16CD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = MicrophoneAnalysis;
 			sourceTree = "<group>";
 		};
+		D6C74CD8A44EC8B0E88FF0BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				611B71076FE1BAFBDB4FECB0 /* Pods-MicrophoneAnalysis.debug.xcconfig */,
+				ED37DF161C6C51A88FA47C4A /* Pods-MicrophoneAnalysis.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C293BCEF211957A700C31D94 /* Build configuration list for PBXNativeTarget "MicrophoneAnalysis" */;
 			buildPhases = (
+				ECB4F939A1D77E6AF702481E /* [CP] Check Pods Manifest.lock */,
 				C293BCD9211957A600C31D94 /* Sources */,
 				C293BCDA211957A600C31D94 /* Frameworks */,
 				C293BCDB211957A600C31D94 /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ECB4F939A1D77E6AF702481E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicrophoneAnalysis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C293BCD9211957A600C31D94 /* Sources */ = {
@@ -278,6 +324,7 @@
 		};
 		C293BCF0211957A700C31D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611B71076FE1BAFBDB4FECB0 /* Pods-MicrophoneAnalysis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +342,7 @@
 		};
 		C293BCF1211957A700C31D94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED37DF161C6C51A88FA47C4A /* Pods-MicrophoneAnalysis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
